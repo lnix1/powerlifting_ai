@@ -70,7 +70,7 @@ These steps break out into a few applications. We will develop each with the spe
 	- Success criterion: TBD, (I currently have no clue what annotating entails but will update this when I research more)
 	- I have some thoughts about automating this portion by using stickers of a wild color stuck to a lifter and another existing model to then automatically generate the pixel locations in the video file to generated annotate "joint" locations.
 		- In this case, this would mean loading new video files to the raw file folder, running the color-based model to output files with the pixel location data.
-- [] Application for starting up the camera with model firmware path specified and producing output video file with model results overlaid.
+- [X] Application for starting up the camera with model firmware path specified and producing output video file with model results overlaid.
 	- Success criterion: application started from the command line with model firmware path specified which uploads the model, starts the camera, and overlays model results over video feed.
 
 Further areas to build after MVP:
