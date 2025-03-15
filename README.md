@@ -38,7 +38,7 @@ An additional choice appears to be PCT (2023):
 
 ## Jan. 20th, 2024 Update
 
-The primary documentation for working with the camer is here: https://www.raspberrypi.com/documentation/accessories/ai-camera.html
+The primary documentation for working with the camera is here: https://www.raspberrypi.com/documentation/accessories/ai-camera.html
 
 There are basically two options for working with the camera: rpicam-apps, and Picamera2
 	- The first requires writing .cpp files for deploying any model, parsing results, and overlaying on video feed.
@@ -55,16 +55,16 @@ I want to build a project which allows me to do all of the following:
 	- Quantize & compress the trained model, convert compressed model to IMX500 format, and package the converted file into a firmware file that can be loaded at runtime onto the camera
 	- Deploy model to camera and run a video application which plots results of model inference to the video
 
-These steps break out into a few applications. We will develop in this order with the specified success criterion:
-	1. Application for compression, conversion, and packaging of a trained model.
+These steps break out into a few applications. We will develop each with the specified success criterion:
+	- [] Application for compression, conversion, and packaging of a trained model.
 		- Success criterion: application started from the command line takes flags for trained model path & output path, then produces firmware file. First tests will just use a pre-existing model.
-	2. Application for training a model from annotated video files.
+	- [] Application for training a model from annotated video files.
 		- Success criterion: application started from the command line takes flags for path to folder of annotated videos & model architecture specification & output file path, trains model, saves trained model to output file. 
-	3. Application for annotating video files.
+	- [] Application for annotating video files.
 		- Success criterion: TBD, (I currently have no clue what annotating entails but will update this when I research more)
 		- I have some thoughts about automating this portion by using stickers of a wild color stuck to a lifter and another existing model to then automatically generate the pixel locations in the video file to generated annotate "joint" locations.
 			- In this case, this would mean loading new video files to the raw file folder, running the color-based model to output files with the pixel location data.
-	4. Application for starting up the camera with model firmware path specified and producing output video file with model results overlaid.
+	- [] Application for starting up the camera with model firmware path specified and producing output video file with model results overlaid.
 		- Success criterion: application started from the command line with model firmware path specified which uploads the model, starts the camera, and overlays model results over video feed.
 
 Further areas to build after MVP:
