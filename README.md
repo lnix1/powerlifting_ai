@@ -62,15 +62,15 @@ I want to build a project which allows me to do all of the following:
 
 These steps break out into a few applications. We will develop each with the specified success criterion:
 
-- [] Application for compression, conversion, and packaging of a trained model.
+- [ ] Application for compression, conversion, and packaging of a trained model.
 	- Success criterion: application started from the command line takes flags for trained model path & output path, then produces firmware file. First tests will just use a pre-existing model.
-- [] Application for training a model from annotated video files.
+- [ ] Application for training a model from annotated video files.
 	- Success criterion: application started from the command line takes flags for path to folder of annotated videos & model architecture specification & output file path, trains model, saves trained model to output file. 
-- [] Application for annotating video files.
+- [ ] Application for annotating video files.
 	- Success criterion: TBD, (I currently have no clue what annotating entails but will update this when I research more)
 	- I have some thoughts about automating this portion by using stickers of a wild color stuck to a lifter and another existing model to then automatically generate the pixel locations in the video file to generated annotate "joint" locations.
 		- In this case, this would mean loading new video files to the raw file folder, running the color-based model to output files with the pixel location data.
-- [X] Application for starting up the camera with model firmware path specified and producing output video file with model results overlaid.
+- [ ] Application for starting up the camera with model firmware path specified and producing output video file with model results overlaid.
 	- Success criterion: application started from the command line with model firmware path specified which uploads the model, starts the camera, and overlays model results over video feed.
 
 Further areas to build after MVP:
