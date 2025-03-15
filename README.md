@@ -41,8 +41,9 @@ An additional choice appears to be PCT (2023):
 The primary documentation for working with the camera is here: https://www.raspberrypi.com/documentation/accessories/ai-camera.html
 
 There are basically two options for working with the camera: rpicam-apps, and Picamera2
-	- The first requires writing .cpp files for deploying any model, parsing results, and overlaying on video feed.
-	- The second has everything I need, can be done all via python, and seems to run just as smooth for smaller models.
+
+- The first requires writing .cpp files for deploying any model, parsing results, and overlaying on video feed.
+- The second has everything I need, can be done all via python, and seems to run just as smooth for smaller models.
 
 We'll go with Picamera2.
 
