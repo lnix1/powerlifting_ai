@@ -11,12 +11,13 @@ But this seems to be expecting the camera is head on with the person and it over
 We want to develop an application for checking the position of a lifter's joints during an exercise to check that they have completed the full movement, in particular reaching depth for a squat.
 
 So our problem is:
-	1) We need a dataset associating video of the lift movements with positions of the joints
-		- The idea is to have the model predict the position of the joints in each frame
-		- We can then draw the lines between points as we would format the model predictions in a known order (e.g. j1=right ankle, j2=right knee, etc...)
-		- So the challenge is to build a dataset which gives the pixel location of each join for each frame of the video
-	2) Then we train our model to predict the joint positions
-	3) Then we package this model up and build an application script which runs the model and overlays the prediction points + drawings on the video feed
+
+1) We need a dataset associating video of the lift movements with positions of the joints
+	- The idea is to have the model predict the position of the joints in each frame
+	- We can then draw the lines between points as we would format the model predictions in a known order (e.g. j1=right ankle, j2=right knee, etc...)
+	- So the challenge is to build a dataset which gives the pixel location of each join for each frame of the video
+2) Then we train our model to predict the joint positions
+3) Then we package this model up and build an application script which runs the model and overlays the prediction points + drawings on the video feed
 
 What we are trying to do is also known as "pose estimation".
 For now, we want to research existing models and save the development of a bespoke dataset and model design for a later date.
@@ -29,12 +30,14 @@ For our purposes, kinematic pose estimation most accurately describes our poblem
 In particular, we want to draw a line between the core of the knee and the hip to ensure the lifter's hip drops as lows as the center of the knee.
 
 A solid and modern choice appears to be TransPose (2021):
-	- Github: https://github.com/yangsenius/TransPose?tab=readme-ov-file
-	- Arvix: https://arxiv.org/abs/2012.14214
-	- Youtube: https://www.youtube.com/watch?v=HsBdmJYJs74
+
+- Github: https://github.com/yangsenius/TransPose?tab=readme-ov-file
+- Arvix: https://arxiv.org/abs/2012.14214
+- Youtube: https://www.youtube.com/watch?v=HsBdmJYJs74
 
 An additional choice appears to be PCT (2023):
-	- Arvix: https://arxiv.org/pdf/2303.11638v1
+
+- Arvix: https://arxiv.org/pdf/2303.11638v1
 
 ## Jan. 20th, 2024 Update
 
