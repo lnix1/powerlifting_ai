@@ -1,7 +1,10 @@
 # Software Requirements Install Instructions:
 
 This project was developed on a Raspberry Pi 5 with Raspberry Pi OS
-The following commands were run in order to download required software for ai camera + download example code respository.
+
+## Software for the Camera
+
+The following commands were run in order to download required software for ai camera.
 
 - (These directions were derived from a setup guide: https://www.youtube.com/watch?v=PFfTV4U4QgE&t=180s)
 
@@ -11,6 +14,15 @@ sudo apt install imx500-all
 sudo reboot
 sudo apt install python3-opencv python3-munkres
 ```
+
+## Annotation Software
+
+I've opted to go open-source for the annotation software and to not re-invent the wheel here. I'll use Intel's Computer Vision Annotation Software ([cvat.ai](https://www.cvat.ai/)).
+
+I DID NOT run this portion of the project on my raspberry pi. CVAT requires more resources that my poor Pi 5 can bring to bear. Instead, I used a personal machine running Ubuntu 20.04 with an AMD processor and Nvidia 2060 GPU.
+
+Installation and setup instructions [are found here](https://docs.cvat.ai/docs/administration/basics/installation/).
+
 
 # Harware Used:
 
