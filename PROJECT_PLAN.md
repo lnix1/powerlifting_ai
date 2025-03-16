@@ -75,3 +75,19 @@ Further areas to build after MVP:
 
 - Saving video file with model results overlaid.
 - Easy start-up and stop of python application. Perhaps integrated with a clicker button via USB.
+- Automating video retrieval and labeling / annotation of training & test data.
+
+## Further Research (March 15, 2025)
+
+### Other attempts at the same task
+
+Other attempts have been made at form estimation for powerlifting / weight training to create [automated tooling for form supervision](https://arxiv.org/pdf/2202.14019). However, I have found only two attempts at explicitly automating depth judging:
+
+1. [Automated Powerlifting Judging through Keypoint Detection](https://cs231n.stanford.edu/2024/papers/automating-powerlifting-judging-through-keypoint-detection.pdf)
+2. [ATG.AI](https://github.com/RanGlad12/ATG.AI)
+
+I will use the first to inform the system I build and the second to avoid potential pitfalls related to camera angle. For example, I originally intended this project to cover only a side view of the lifter and judge depth from either a right or left perspective. On review of ATG.AI's attempt at this same tooling, I realized that spotters would almost completely obscure this perspective. Instead the angle will have to be from either slightly behind the lifter on the left / right, or directly head-on.
+
+### Building a Dataset
+
+Similar to paper number one above, I will use publically available YouTube videos from prior meets. However, I intend to manually label the videos as my goal is to learn the process in this project. This means I will construct a smaller dataset and will not initially re-create their data pipeline approach. Creating an automated labeling pipeline will remain a future point of expansion though.

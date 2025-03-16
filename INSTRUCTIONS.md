@@ -23,6 +23,7 @@ I DID NOT run this portion of the project on my raspberry pi. CVAT requires more
 
 Installation and setup instructions [are found here](https://docs.cvat.ai/docs/administration/basics/installation/).
 
+Courses on using the tool can be [found here](https://www.youtube.com/playlist?list=PL0to7Ng4Puua37NJVMIShl_pzqJTigFzg)
 
 # Harware Used:
 
